@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Bernardo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="recursos/favicon-32x32.png" type="image/x-icon" id="fav">
+
+    <script src="https://kit.fontawesome.com/0380407b19.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div>
+            
+            <a href="#inicio" class="header-link so_pc" id="t1">Início</a>
+            <p class="barras so_pc">//</p>
+            <a href="#sobre" class="header-link so_pc" id="t2">Sobre</a>
+            <p class="barras so_pc">//</p>
+            <a href="#habilidades" class="header-link so_pc" id="t3">Habilidades</a>
+            <p class="barras so_pc">//</p>
+            <a href="#projetos" class="header-link so_pc" id="t4">Projetos</a>
+            <p class="barras so_pc">//</p>
+            <a href="#contato" class="header-link so_pc" id="t5">Contato</a>
+            <button id="lingua" onclick="abrirModal()">
+                <i class="fa-solid fa-language"></i>
+                PT
+            </button>   
+            <dialog id="dialog">
+                <button id="fechar" onclick="fecharModal()" class="btn_modal btn3"><i class="fa-solid fa-xmark"></i></button>
+                <h1>Selecione um idioma:</h1>
+                <button onclick="traduzirParaPT()" class="btn_modal btn1">Portugês</button>
+                <button onclick="traduzirParaEN()" class="btn_modal btn2">English</button>
+            </dialog>
+            <div id="curriculo">
+                <a href="recursos/Currículo - Miguel Bernardo Dias Silva.pdf" download="Currículo - Miguel Bernardo Dias Silva.pdf" id="baixar-curriculo"><i class="fa-solid fa-download"></i>Currículo</a>
+            </div>
+            <label class="checkbox-custom" for="tema">
+                <input type="checkbox" class="troca-tema" id="tema" onclick="trocaDeTema()">
+                <span class="icone" id="unchecked"><i class="fa-solid fa-moon"></i></span>
+                <span class="icone" id="checked"><i class="fa-solid fa-sun"></i></span>
+            </label>
+            
+            
+        </div>
+        <img src="recursos/claro/Vector (1).svg" alt="" id="vetor-header">
+    </header>
+    <section id="inicio">
+        <div id="sub-inicio">
+            <p id="t7">Prazer, sou</p>
+            <h1 id="miguel">
+                <span class="letra_nome">M</span>
+                <span class="letra_nome">I</span>
+                <span class="letra_nome">G</span>
+                <span class="letra_nome">U</span>
+                <span class="letra_nome">E</span>
+                <span class="letra_nome">L</span>
+            </h1>
+            <h1 id="bernardo">
+                <span class="letra_nome">B</span>
+                <span class="letra_nome">E</span>
+                <span class="letra_nome">R</span>
+                <span class="letra_nome">N</span>
+                <span id="fonte_bernardo" class="letra_nome">A</span>
+                <span class="letra_nome">R</span>
+                <span class="letra_nome">D</span>
+                <span class="letra_nome">O</span>    
+            </h1>
+            <h3 id="t8">Eu sou: <span id="texto-rotativo"></span></h3>
+        </div>
+        
+        <img src="recursos/claro/alvo.svg" alt="" class="alvo" id="alvo">
+    </section>
+    <section id="seta">
+        <div id="seta_para_baixo" class="bounce">
+            <a href="#sobre"><img src="recursos/seta_baixo.svg" alt="" id="seta_baixo"></a>
+        </div>
+    </section>
+    <section id="sobre">
+        <img src="recursos/claro/SOBRE MIM.svg" alt="" id="sobre_mim_titulo">
+        <p id="t9">Um pouco sobre mim e sobre o que gosto de fazer e quero construir</p>
+        <section>
+            <div id="sobre_mim_texto">
+                <p id="t10">Sou Miguel Bernardo Dias Silva, tenho 17 anos e estudo no COTEMIG Floresta. Trabalho no desenvolvimento de sistemas, criando soluções focadas em C#, bancos de dados e web, conectando a teoria da sala de aula com projetos práticos. <br><br> Tenho o compromisso de encarar cada código com exatidão e atenção aos detalhes. Para mim, uma boa lógica e uma estrutura limpa se resolvem na mesma decisão. <br><br> No dia a dia, trabalho desenvolvendo aplicações com C#, modelando bancos de dados em MySQL, criando páginas com HTML e CSS e organizando processos com Google Workspace. O objetivo é sempre garantir que a estrutura por trás do sistema seja sólida e funcione sem complicações. <br><br> O que me move é resolver problemas reais usando tecnologia, buscando sempre o caminho mais simples e bem estruturado. Não é sobre tentar usar todas as ferramentas do mercado, mas sim sobre entregar algo que funcione de verdade e cumpra o seu papel.</p>
+            </div>
+            <div id="sobre_mim_conteudo">
+                <div>
+
+                </div>
+                <div id="curriculo_sobre_mim">
+                    <a href="recursos/Currículo - Miguel Bernardo Dias Silva.pdf" download="Currículo - Miguel Bernardo Dias Silva.pdf" id="t11"><i class="fa-solid fa-download"></i>Baixe meu currículo</a>
+                </div>
+                <div id="arqueiro">
+                    <img src="recursos/claro/cara_da_flecha.svg" alt="" id="cara_da_flecha">
+                </div>
+            </div>
+        </section>
+        
+    </section>
+    <section id="habilidades">
+        <img src="recursos/claro/HABILIDADES.svg" alt="" id="habilidades_titulo">
+        <p id="t12">Um pouco sobre o que eu sei fazer</p>
+        <section>
+            <div class="hard">
+                <div class="habilidade_logo">
+                    <img src="recursos/claro/html_claro.svg" alt="" id="html_icon">
+                </div>
+                <div class="habilidade_logo">
+                    <img src="recursos/claro/css_claro.svg" alt="" id="css_icon">
+                </div>
+                <div class="habilidade_logo">
+                    <img src="recursos/claro/csahrp_claro.svg" alt="" id="csharp_icon">
+                </div>
+                <div class="habilidade_logo">
+                    <img src="recursos/claro/figma_claro.svg" alt="" id="figma_icon">
+                </div>
+                <div class="habilidade_logo">
+                    <img src="recursos/claro/sql_claro.svg" alt="" id="sql_icon">
+                </div>
+                <div class="habilidade_logo">
+                    <img src="recursos/claro/js_claro.svg" alt="" id="js_icon">
+                </div>
+            </div>
+            <div class="soft">
+                <h1>soft-skills</h1>
+                <ul>
+                    <li class="" id="t13">
+                        Pensamento crítico 
+                    </li>
+                    <li class="" id="t14">
+                        Resolução de problemas
+                    </li>
+                    <li class="" id="t15">
+                        Disciplina e  foco
+                    </li>
+                    <li class="" id="t16">
+                        Atenção aos detalhes
+                    </li>
+                    <li class="" id="t17">
+                        Proatividade
+                    </li>
+                    <li class="" id="t18">
+                        Autonomia
+                    </li>
+                    <li class="" id="t19">
+                        Inglês
+                    </li>
+                    <li class="" id="t20">
+                        Facilidade de aprendizado
+                    </li>
+                    <li class="" id="t21">
+                        Raciocínio lógico 
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section id="projetos">
+        <img src="recursos/claro/projetos_claro.svg" alt="" id="projetos_titulo">
+        <p id="t22">Um pouco sobre o que eu ja fiz</p>
+        <section id="projetos_show">
+            <div class="projetos_page p1">
+                <a href="https://miguelb31.github.io/LandingPage-ModoClaroEscuro/" target="_blank" class=""></a>
+            </div>
+            <div class="projetos_page p2">
+                <a href="https://miguelb31.github.io/Tabela-Periodica/" target="_blank" class="">
+                </a>
+            </div>
+            <div class="projetos_page p3">
+                <a href="https://miguelb31.github.io/TheBestDiscos/" target="_blank" class="">
+                </a>
+            </div>
+        </section>
+    </section>
+    <section id="contato">
+        <img src="recursos/claro/CONTATO.svg" alt="" id="contato_titulo">
+        <p id="t23">Entre em contato comigo!</p>
+        <section>
+            <form id="form" action="https://formspree.io/f/xbgdopvl" method="post">
+                <div id="nome_email">
+                    <input type="text" placeholder="Nome:" class="inp" maxlength="50" required name="nome" id="t24">
+                    <input type="email" name="email" id="" placeholder="Email:" class="inp" required> 
+                </div>
+                <div id="msg_enviar">
+                    <textarea name="mensagem" id="t25" placeholder="Mensagem:" maxlength="250" class="inp" required></textarea>
+                    <input type="submit" class="inp1" id="t26" value="ENVIAR">
+                </div>
+                
+            </form>
+            <div>
+                <div class="externo">
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:miguel.bernardods@gmail.com" target="_blank"></a>
+                </div>
+                <div class="externo">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/MiguelB31" target="_blank"></a>
+                </div> 
+                <div class="externo">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://www.linkedin.com/in/miguel-bernardo-silva" target="_blank"></a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
